@@ -7,10 +7,10 @@ class Car:
         self.color = color
     
     def drive(self):
-        print("This car is driving!")
+        print(self.model + " is on the road!")
 
     def stop(self):
-        print("The car is stopped!")
+        print(self.model+ " is sleeping!")
 
 car_1 = Car("Aston Martin", "DB11", "2019","Black")
 
@@ -25,3 +25,8 @@ print(car_2.brand)
 print(car_2.model)
 print(car_2.year)
 print(car_2.color)
+
+car_2.drive()
+car_2.stop()
+car_1.drive()
+car_1.stop()
